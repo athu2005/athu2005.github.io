@@ -5,13 +5,13 @@
 }
 
 :root {
-    --primary-color: #5e60ce;
-    --secondary-color: #1d3557;
-    --accent-color: #f1faee;
-    --text-dark: #1a1a1a;
-    --text-light: #666666;
-    --bg-light: #f8f9fa;
-    --border-color: #e0e0e0;
+    --primary-color: #e76f51;      /* warm orange */
+    --secondary-color: #6d2e2e;    /* deep warm brown-red */
+    --accent-color: #fdf0e6;       /* soft cream */
+    --text-dark: #2b2b2b;
+    --text-light: #7a6a5f;
+    --bg-light: #fff5f0;           /* warm background */
+    --border-color: #f0d9ce;
     --transition: all 0.3s ease-in-out;
 }
 
@@ -82,7 +82,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
     color: white;
     text-align: center;
     padding: 2rem;
