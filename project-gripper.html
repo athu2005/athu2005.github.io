@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotic Gripper Arm - Atharv Jangale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">AJ</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">← Back to Projects</a>
+            <h1>Robotic Gripper Arm</h1>
+            <p class="project-subtitle">Servo-Actuated Gripper for Mobile Robot with Optimized Precision & Speed</p>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="project-grid">
+                <!-- Main Content -->
+                <div class="project-main">
+                    <h2>Overview</h2>
+                    <p>
+                        This project involved designing and fabricating a servo-actuated robotic gripper arm for the SeDriCa mobile robot. 
+                        The gripper was optimized through iterative design cycles and field testing to achieve fast, reliable object pickup with precision alignment.
+                    </p>
+
+                    <h2>Design Objectives</h2>
+                    <ul class="project-list">
+                        <li>Fast actuation speed for time-constrained tasks</li>
+                        <li>Strong grip force without damaging fragile objects</li>
+                        <li>Precise alignment for accurate object positioning</li>
+                        <li>Lightweight construction for minimal impact on mobile platform</li>
+                        <li>Modular design for easy maintenance and upgrades</li>
+                    </ul>
+
+                    <h2>Key Design Features</h2>
+                    <p><strong>Actuation System:</strong> High-torque servo motor with geared linkage mechanism for force multiplication</p>
+                    <p><strong>Mechanism:</strong> 4-bar linkage with spring-loaded fingers for adaptive gripping</p>
+                    <p><strong>Materials:</strong> Aluminum frame with 3D-printed finger pads for grip texture</p>
+                    <p><strong>Control:</strong> PWM servo control interfaced with ROS2 for autonomous operation</p>
+
+                    <h2>Development Process</h2>
+                    <ul class="project-list">
+                        <li><strong>Conceptualization:</strong> Analyzed gripper requirements and compared parallel-jaw vs. compliant gripper designs</li>
+                        <li><strong>CAD Design:</strong> Created detailed 3D model in SolidWorks with linkage analysis</li>
+                        <li><strong>Prototyping:</strong> Fabricated first prototype using 3D printing and machining</li>
+                        <li><strong>Field Testing:</strong> Iteratively tested with various objects and refined finger geometry, spring tension, and servo speed</li>
+                        <li><strong>Optimization:</strong> Final design achieved optimal balance between grip strength, speed, and weight</li>
+                    </ul>
+
+                    <h2>Performance Metrics</h2>
+                    <p><strong>Grip Force:</strong> 50-100N adjustable force maintaining object integrity</p>
+                    <p><strong>Actuation Time:</strong> 0.5-1.2 seconds for full grasp</p>
+                    <p><strong>Weight:</strong> 350g total assembly</p>
+                    <p><strong>Positioning Accuracy:</strong> ±5mm alignment tolerance</p>
+
+                    <h2>Impact on Mobile Platform</h2>
+                    <p>
+                        The gripper significantly enhanced the SeDriCa robot's manipulation capabilities, enabling autonomous object pickup and placement tasks. 
+                        The modular design allowed for easy integration with the robot's existing control system.
+                    </p>
+
+                    <h2>Future Improvements</h2>
+                    <ul class="project-list">
+                        <li>Implement tactile feedback sensors for intelligent grip detection</li>
+                        <li>Add suction cup alternative for smooth object pickup</li>
+                        <li>Reduce weight further using carbon fiber materials</li>
+                        <li>Develop machine learning model for object-specific grip optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="project-sidebar">
+                    <div class="info-box">
+                        <h3>Project Details</h3>
+                        <p><strong>Duration:</strong> Nov 2024 – May 2025</p>
+                        <p><strong>Organization:</strong> SeDriCa, UMIC IIT Bombay</p>
+                        <p><strong>Type:</strong> Design & Fabrication</p>
+                        <p><strong>Platform:</strong> Mobile Robot (SeDriCa)</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Technologies & Tools</h3>
+                        <ul class="tech-list">
+                            <li>SolidWorks CAD</li>
+                            <li>3D Printing</li>
+                            <li>CNC Machining</li>
+                            <li>Servo Motors</li>
+                            <li>Linkage Mechanisms</li>
+                            <li>ROS2</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Skills Developed</h3>
+                        <ul class="tech-list">
+                            <li>Mechanical Design</li>
+                            <li>Mechanism Synthesis</li>
+                            <li>Prototyping & Fabrication</li>
+                            <li>Iterative Testing</li>
+                            <li>Systems Integration</li>
+                            <li>Robotics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Atharv Jangale | B.Tech Mechanical Engineering, IIT Bombay (2027)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

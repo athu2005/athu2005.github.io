@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected Mobility Testbed - Atharv Jangale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">AJ</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">← Back to Projects</a>
+            <h1>Connected Mobility Testbed</h1>
+            <p class="project-subtitle">Adapted Cyber-Physical Mobility Laboratory for Indian Traffic Conditions</p>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="project-grid">
+                <!-- Main Content -->
+                <div class="project-main">
+                    <h2>Overview</h2>
+                    <p>
+                        This research project adapted IIT Bombay's Cyber-Physical Mobility Lab to study autonomous vehicle behavior under Indian traffic conditions. 
+                        Working under Prof. Archak Mittal, I updated the complete vehicle dynamics model and hardware systems for a scaled 1:14 RC car platform.
+                    </p>
+
+                    <h2>Key Contributions</h2>
+                    <ul class="project-list">
+                        <li><strong>Hardware Adaptation:</strong> Modified MJX Hyper Go RC car with custom PCBs, power electronics, and 3D-printed sensor mounts for scale change (1:18 → 1:14)</li>
+                        <li><strong>ROS2 Implementation:</strong> Updated all ROS codes and control algorithms to account for new vehicle specifications and sensor configurations</li>
+                        <li><strong>Vehicle Dynamics Model:</strong> Replaced kinematic bicycle model with Ackermann steering model for improved accuracy in steering control</li>
+                        <li><strong>Motion Planning:</strong> Developed algorithms to minimize lateral tire slip and improve trajectory tracking in tight maneuvers</li>
+                        <li><strong>Field Testing:</strong> Conducted extensive testing in diverse traffic scenarios including congested urban roads and highway conditions</li>
+                    </ul>
+
+                    <h2>Technical Details</h2>
+                    <p><strong>Vehicle Platform:</strong> MJX Hyper Go 1:14 RC Car with custom electronics and sensor suite</p>
+                    <p><strong>Software Stack:</strong> ROS2, Python, C++</p>
+                    <p><strong>Key Sensors:</strong> LiDAR, IMU, GNSS, Camera</p>
+                    <p><strong>Control System:</strong> Ackermann steering model with trajectory tracking algorithms</p>
+
+                    <h2>Impact & Results</h2>
+                    <p>
+                        The updated testbed successfully demonstrated improved simulation-to-reality transfer by minimizing lateral tire slip prediction errors. 
+                        The vehicle dynamics model now accurately represents Indian traffic behavior including aggressive lane changes and congested driving patterns.
+                    </p>
+
+                    <h2>Challenges Overcome</h2>
+                    <ul class="project-list">
+                        <li>Scaling vehicle dynamics equations for different RC car scales</li>
+                        <li>Tuning control parameters for Indian traffic characteristics</li>
+                        <li>Integrating custom hardware with existing ROS2 architecture</li>
+                        <li>Minimizing computational latency for real-time control</li>
+                    </ul>
+
+                    <h2>Learning Outcomes</h2>
+                    <p>
+                        This project deepened my understanding of vehicle dynamics, control systems, and ROS2 implementation. 
+                        I learned how to adapt research platforms for real-world conditions and the importance of iterative testing and validation.
+                    </p>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="project-sidebar">
+                    <div class="info-box">
+                        <h3>Project Details</h3>
+                        <p><strong>Duration:</strong> Feb 2025 – Aug 2025</p>
+                        <p><strong>Guide:</strong> Prof. Archak Mittal</p>
+                        <p><strong>Institution:</strong> IIT Bombay</p>
+                        <p><strong>Type:</strong> Research Project</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Technologies</h3>
+                        <ul class="tech-list">
+                            <li>ROS2</li>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>Vehicle Dynamics</li>
+                            <li>Motion Planning</li>
+                            <li>Control Systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Skills Developed</h3>
+                        <ul class="tech-list">
+                            <li>Robotics Integration</li>
+                            <li>System Modeling</li>
+                            <li>Real-time Control</li>
+                            <li>Hardware-Software Integration</li>
+                            <li>Algorithm Tuning</li>
+                            <li>Field Testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Atharv Jangale | B.Tech Mechanical Engineering, IIT Bombay (2027)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

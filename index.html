@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharv Jangale - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">AJ</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Atharv Jangale</h1>
+            <p class="subtitle">Mechanical Engineer | Innovator | IIT Bombay (2027)</p>
+            <p class="description">
+                B.Tech Mechanical Engineering with expertise in automotive systems, 
+                thermal energy, and robotics. Building next-gen efficiency solutions.
+            </p>
+            <a href="#projects" class="cta-button">Explore My Projects</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Mechanical Engineering student at IIT Bombay (Graduating 2027) with a passion for innovation in clean energy, automotive systems, and robotics. 
+                        With hands-on experience in thermal systems, vehicle dynamics, and CAD design, I translate complex engineering challenges into practical solutions.
+                    </p>
+                    <p>
+                        As Founding Team Lead of Team TorqueX (20-member interdisciplinary team), I focus on developing novel efficiency solutions including six-stroke combustion systems and advanced thermal energy recovery. 
+                        I've interned at leading companies like DeMITasse Energies and N.B. Technologies, contributing to cutting-edge clean-tech and automotive solutions.
+                    </p>
+                    <h3>Technical Stack</h3>
+                    <div class="skills">
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">SOLIDWORKS</span>
+                        <span class="skill-tag">AutoCAD</span>
+                        <span class="skill-tag">ROS2</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">MSC Adams</span>
+                        <span class="skill-tag">ANSYS</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                    <h3>Expertise</h3>
+                    <div class="skills">
+                        <span class="skill-tag">Vehicle Dynamics</span>
+                        <span class="skill-tag">Thermal Systems</span>
+                        <span class="skill-tag">CAD Design</span>
+                        <span class="skill-tag">Robotics</span>
+                        <span class="skill-tag">Energy Systems</span>
+                        <span class="skill-tag">Control Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">Connected Mobility Testbed</div>
+                    <p class="project-description">
+                        Adapted Cyber-Physical Lab for Indian traffic. Updated vehicle dynamics model with Ackermann steering for 1:14 RC car, improving simulation accuracy.
+                    </p>
+                    <p class="project-tech">ROS2 • Vehicle Dynamics • Motion Planning</p>
+                    <a href="project-mobility.html" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">Robotic Gripper Arm</div>
+                    <p class="project-description">
+                        Servo-actuated gripper for mobile robot. Optimized through iterative field testing for grip strength, speed, and modularity.
+                    </p>
+                    <p class="project-tech">Mechanical Design • SolidWorks • Control Systems</p>
+                    <a href="project-gripper.html" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">Six-Stroke Engine Cam Design</div>
+                    <p class="project-description">
+                        Novel six-stroke camshaft system with MATLAB-generated profiles and ADAMS dynamic simulation. 35% efficiency improvement in intake flow.
+                    </p>
+                    <p class="project-tech">MATLAB • MSC Adams • Mechanical Design</p>
+                    <a href="project-sixstroke.html" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">HVAC Coil Optimization</div>
+                    <p class="project-description">
+                        Iterative MATLAB simulation for coil efficiency. Optimized diameter, spacing, and airflow with quasi-ML approach using ISEER evaluations.
+                    </p>
+                    <p class="project-tech">MATLAB • Thermal Systems • Optimization</p>
+                    <a href="project-hvac.html" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">Battery RUL Prediction</div>
+                    <p class="project-description">
+                        ML analysis of 15,000+ Li-ion battery cycles. XGBoost (RMSE: 67.1) and LSTM (RMSE: 59.3) models for remaining useful life prediction.
+                    </p>
+                    <p class="project-tech">Python • XGBoost • LSTM • Data Analysis</p>
+                    <a href="project-battery.html" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">EcoCombust Startup</div>
+                    <p class="project-description">
+                        Pre-incubated at DSSE IIT Bombay with Rs. 4.75 Lakh funding. Developing retrofit kit for diesel engines with 50% higher efficiency and 30% lower emissions.
+                    </p>
+                    <p class="project-tech">Clean Tech • Combustion Systems • Entrepreneurship</p>
+                    <a href="project-ecocombust.html" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p class="contact-subtitle">Interested in collaborations, research partnerships, or discussing clean tech innovations?</p>
+            <div class="contact-links">
+                <a href="mailto:atharv.jangale@iitb.ac.in" class="contact-link">
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/athu2005" target="_blank" class="contact-link">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/atharv-jangale" target="_blank" class="contact-link">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://twitter.com/atharvjangale" target="_blank" class="contact-link">
+                    <span>Twitter</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Atharv Jangale | B.Tech Mechanical Engineering, IIT Bombay (2027)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

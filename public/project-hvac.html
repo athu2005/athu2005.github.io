@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HVAC Coil Optimization - Thermal system efficiency improvements">
+    <title>HVAC Coil Optimization — Atharv Jangale</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@300;400;600;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">AJ</div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="/" class="back-link">← Back to Portfolio</a>
+            <h1>HVAC Coil Optimization</h1>
+            <p class="project-subtitle">Parametric Thermal System Design with ML-Driven Analysis</p>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="project-grid">
+                <div class="project-main">
+                    <h2>Overview</h2>
+                    <p>
+                        Engineered comprehensive MATLAB-based parametric simulation framework for HVAC heat exchanger optimization. 
+                        Deployed quasi-machine learning optimization techniques to identify design configurations achieving 15-20% 
+                        efficiency improvement while maintaining manufacturing feasibility and cost constraints.
+                    </p>
+
+                    <h2>Technical Development</h2>
+                    <h3>Parametric MATLAB Model</h3>
+                    <p>
+                        Constructed detailed thermal model incorporating fin geometry, tube spacing, air-side pressure drop, and 
+                        refrigerant-side heat transfer coefficients. Model discretizes 3D temperature profiles across coil length with 
+                        variable grid refinement. Computational solver achieves convergence in <2 seconds per simulation cycle, enabling 
+                        rapid design iteration.
+                    </p>
+
+                    <h3>Design Parameter Space</h3>
+                    <p>
+                        Established optimization problem with 15+ design variables including fin pitch, tube diameter, coil rows, 
+                        louver angle, and flow distribution. Each parameter systematically varied within manufacturing constraints 
+                        (sheet metal dies, tubing availability, pressure limits). Response surface methodology generated prediction 
+                        models for efficiency, pressure drop, and manufacturing cost.
+                    </p>
+
+                    <h3>Optimization Algorithm</h3>
+                    <p>
+                        Implemented hybrid optimization combining genetic algorithms for global search with gradient-based refinement 
+                        for local convergence. Quasi-ML component uses historical design database to seed initial population and weight 
+                        fitness function toward practical solutions. Algorithm balanced competing objectives: efficiency, compactness, 
+                        manufacturability, and thermal performance consistency.
+                    </p>
+
+                    <h2>Results & Validation</h2>
+                    <ul class="project-list">
+                        <li><strong>Efficiency Improvement:</strong> Design variants achieved 15-20% thermal efficiency gain vs. baseline</li>
+                        <li><strong>Pressure Drop Reduction:</strong> Optimized louver pattern reduced air-side pressure drop by 12%</li>
+                        <li><strong>Manufacturing Feasibility:</strong> All optimized designs validated for existing production equipment</li>
+                        <li><strong>Cost Analysis:</strong> Most efficient variant required <3% additional raw material cost</li>
+                        <li><strong>Performance Testing:</strong> Prototype validation confirmed prediction accuracy within ±5%</li>
+                    </ul>
+
+                    <h2>Practical Implementation</h2>
+                    <ul class="project-list">
+                        <li>Generated detailed manufacturing drawings for recommended design optimizations</li>
+                        <li>Documented optimization methodology for application to future product lines</li>
+                        <li>Validated design robustness across temperature and humidity operating ranges</li>
+                        <li>Compiled performance comparison database for system integration engineering</li>
+                    </ul>
+                </div>
+
+                <div class="project-sidebar">
+                    <div class="info-box">
+                        <h3>Project Details</h3>
+                        <p><strong>Timeline:</strong> 2024</p>
+                        <p><strong>Team:</strong> Thermal Systems Lab</p>
+                        <p><strong>Role:</strong> Lead Simulation Engineer</p>
+                        <p><strong>Status:</strong> Production Deployment</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Technologies</h3>
+                        <ul class="tech-list">
+                            <li>MATLAB</li>
+                            <li>Simulink</li>
+                            <li>Optimization Toolbox</li>
+                            <li>CFD Preprocessing</li>
+                            <li>Python</li>
+                            <li>Data Analysis</li>
+                            <li>Thermal Modeling</li>
+                            <li>Genetic Algorithms</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Key Skills</h3>
+                        <ul class="tech-list">
+                            <li>Thermal Systems</li>
+                            <li>Heat Transfer</li>
+                            <li>Optimization</li>
+                            <li>MATLAB</li>
+                            <li>Design Analysis</li>
+                            <li>Engineering Simulation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Atharv Jangale | B.Tech Mechanical Engineering, IIT Bombay (2027)</p>
+    </footer>
+
+    <script defer src="/script.js"></script>
+</body>
+</html>

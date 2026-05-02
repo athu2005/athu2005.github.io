@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Battery RUL Prediction - Machine learning analysis of Li-ion battery lifecycle">
+    <title>Battery RUL Prediction — Atharv Jangale</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@300;400;600;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">AJ</div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="/" class="back-link">← Back to Portfolio</a>
+            <h1>Battery RUL Prediction</h1>
+            <p class="project-subtitle">ML Analysis of 15,000+ Li-ion Cycles with LSTM Architecture</p>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="project-grid">
+                <div class="project-main">
+                    <h2>Overview</h2>
+                    <p>
+                        Conducted comprehensive machine learning analysis of extensive Li-ion battery degradation dataset spanning 15,000+ 
+                        charge/discharge cycles. Developed LSTM-based remaining useful life (RUL) prediction model achieving 59.3 RMSE accuracy, 
+                        enabling predictive maintenance strategies and battery pack health monitoring systems.
+                    </p>
+
+                    <h2>Data Analysis & Preprocessing</h2>
+                    <h3>Dataset Characteristics</h3>
+                    <p>
+                        Processed 15,000+ cycles across multiple battery samples with comprehensive telemetry including voltage transients, 
+                        current profiles, temperature dynamics, and impedance measurements. Dataset spans realistic operational scenarios 
+                        including temperature variations, depth-of-discharge diversity, and aging patterns. Implemented robust outlier 
+                        detection and data normalization pipelines to ensure model robustness.
+                    </p>
+
+                    <h3>Feature Engineering</h3>
+                    <p>
+                        Extracted 40+ engineered features including voltage decay slope, resistance rise rate, entropy-based degradation 
+                        indicators, and thermal stress coefficients. Performed incremental capacity and differential voltage analysis to 
+                        isolate degradation mechanisms. Features selected through recursive feature elimination and correlation analysis 
+                        to minimize multicollinearity while maximizing predictive power.
+                    </p>
+
+                    <h2>Model Development</h2>
+                    <h3>LSTM Architecture</h3>
+                    <p>
+                        Developed Long Short-Term Memory network with dual-layer architecture processing temporal sequences of battery 
+                        measurements. LSTM captures long-range dependencies in degradation patterns while automatically learning non-linear 
+                        relationships between features and RUL. Architecture includes attention mechanisms to weight significant cycle 
+                        transitions and irregular behavior patterns.
+                    </p>
+
+                    <h3>Model Optimization</h3>
+                    <p>
+                        Trained ensemble combining LSTM with gradient boosting (XGBoost) models for robustness validation. Hyperparameter 
+                        optimization using Bayesian search achieved optimal balance between training efficiency and generalization. 
+                        Cross-validation with time-series specific techniques (forward chaining) prevented temporal leakage and ensured 
+                        realistic performance estimates.
+                    </p>
+
+                    <h2>Results & Performance</h2>
+                    <ul class="project-list">
+                        <li><strong>LSTM Accuracy:</strong> Achieved 59.3 RMSE on held-out test set across diverse battery conditions</li>
+                        <li><strong>Early Prediction:</strong> Model enables 200+ cycle advance warning for battery replacement</li>
+                        <li><strong>Generalization:</strong> Validated performance across untrained battery samples with <8% degradation</li>
+                        <li><strong>Uncertainty Quantification:</strong> 95% confidence intervals capture prediction reliability</li>
+                        <li><strong>Computational Efficiency:</strong> Real-time inference in <10 ms on embedded platforms</li>
+                    </ul>
+
+                    <h2>Practical Applications</h2>
+                    <ul class="project-list">
+                        <li>Battery management system (BMS) integration for predictive maintenance algorithms</li>
+                        <li>End-of-life prediction enabling optimal second-life battery routing to less demanding applications</li>
+                        <li>Fleet health monitoring dashboard with automated alert generation for degradation anomalies</li>
+                        <li>Cost optimization framework for replacement scheduling and warranty management</li>
+                    </ul>
+                </div>
+
+                <div class="project-sidebar">
+                    <div class="info-box">
+                        <h3>Project Details</h3>
+                        <p><strong>Timeline:</strong> 2024</p>
+                        <p><strong>Team:</strong> Energy Systems Research Lab</p>
+                        <p><strong>Role:</strong> Lead Data Scientist</p>
+                        <p><strong>Status:</strong> Model Deployment Ready</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Technologies</h3>
+                        <ul class="tech-list">
+                            <li>Python</li>
+                            <li>TensorFlow</li>
+                            <li>Keras</li>
+                            <li>LSTM</li>
+                            <li>XGBoost</li>
+                            <li>Scikit-learn</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Key Skills</h3>
+                        <ul class="tech-list">
+                            <li>Machine Learning</li>
+                            <li>Deep Learning</li>
+                            <li>Data Analysis</li>
+                            <li>Time Series</li>
+                            <li>LSTM</li>
+                            <li>Energy Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Atharv Jangale | B.Tech Mechanical Engineering, IIT Bombay (2027)</p>
+    </footer>
+
+    <script defer src="/script.js"></script>
+</body>
+</html>

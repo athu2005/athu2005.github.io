@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery RUL Prediction - Atharv Jangale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">AJ</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">← Back to Projects</a>
+            <h1>Battery RUL Prediction using EDA & ML</h1>
+            <p class="project-subtitle">Machine Learning Analysis of Li-ion Battery Degradation for Remaining Useful Life Estimation</p>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="project-grid">
+                <!-- Main Content -->
+                <div class="project-main">
+                    <h2>Overview</h2>
+                    <p>
+                        This course project under Prof. Alankar combined exploratory data analysis with machine learning to predict 
+                        the remaining useful life (RUL) of lithium-ion batteries. The project analyzed over 15,000 cycling records from 14 different Li-ion cells 
+                        to identify key degradation patterns and build predictive models.
+                    </p>
+
+                    <h2>Project Objectives</h2>
+                    <ul class="project-list">
+                        <li>Analyze battery degradation patterns across multiple cells and cycling conditions</li>
+                        <li>Identify key features correlating with battery health and remaining useful life</li>
+                        <li>Develop machine learning models for accurate RUL prediction</li>
+                        <li>Compare and optimize different modeling approaches</li>
+                        <li>Provide actionable insights for battery management and replacement strategies</li>
+                    </ul>
+
+                    <h2>Data Analysis & Feature Engineering</h2>
+                    <p><strong>Dataset Scale:</strong> 15,000+ battery cycles from 14 Li-ion cells</p>
+                    <p><strong>Tools Used:</strong> Python (Pandas, NumPy), Seaborn for visualization</p>
+                    
+                    <h3>Key Correlations Discovered</h3>
+                    <ul class="project-list">
+                        <li><strong>Discharge Time → RUL:</strong> Correlation coefficient of 0.78 (strong positive relationship)</li>
+                        <li><strong>Discharge Voltage → RUL:</strong> Correlation coefficient of ±0.76 (bidirectional patterns)</li>
+                        <li><strong>Cycle Count:</strong> Primary degradation indicator tracking battery age</li>
+                        <li><strong>Temperature Effects:</strong> Significant impact on degradation rate and predictions</li>
+                    </ul>
+
+                    <h2>Machine Learning Models Developed</h2>
+                    
+                    <h3>1. XGBoost Model</h3>
+                    <p>
+                        <strong>Performance:</strong> RMSE = 67.1 cycles
+                    </p>
+                    <ul class="project-list">
+                        <li>Gradient boosting approach with ensemble learning</li>
+                        <li>Effective at capturing non-linear degradation patterns</li>
+                        <li>Feature importance analysis revealed discharge voltage as top predictor</li>
+                        <li>Fast inference suitable for real-time battery management systems</li>
+                    </ul>
+
+                    <h3>2. LSTM (Long Short-Term Memory) Model</h3>
+                    <p>
+                        <strong>Performance:</strong> RMSE = 59.3 cycles (BEST)
+                    </p>
+                    <ul class="project-list">
+                        <li>Deep learning model capturing temporal degradation sequences</li>
+                        <li>Superior performance over XGBoost by 11.6% in RMSE</li>
+                        <li>Effectively learned long-term dependencies in battery cycling data</li>
+                        <li>Better handling of variable-length sequences across different cells</li>
+                    </ul>
+
+                    <h2>Methodology</h2>
+                    <ul class="project-list">
+                        <li><strong>Data Preprocessing:</strong> Handled missing values, normalized features, created rolling window features</li>
+                        <li><strong>Train-Test Split:</strong> 80-20 split with temporal ordering preservation</li>
+                        <li><strong>Hyperparameter Tuning:</strong> Grid search and cross-validation for both models</li>
+                        <li><strong>Validation:</strong> Cross-validation with multiple metrics (RMSE, MAE, R²)</li>
+                    </ul>
+
+                    <h2>Key Findings</h2>
+                    <p>
+                        1. Battery degradation follows a predictable trajectory that can be accurately modeled with sufficient historical data
+                    </p>
+                    <p>
+                        2. LSTM networks significantly outperform traditional ML for this temporal sequence prediction task
+                    </p>
+                    <p>
+                        3. Discharge voltage is the most critical feature for RUL prediction, followed by cycle count
+                    </p>
+                    <p>
+                        4. Temperature variations must be accounted for in reliable RUL predictions
+                    </p>
+
+                    <h2>Real-World Applications</h2>
+                    <ul class="project-list">
+                        <li><strong>Battery Management Systems:</strong> Predict maintenance needs before battery failure</li>
+                        <li><strong>Electric Vehicles:</strong> Estimate remaining range and battery health for users</li>
+                        <li><strong>Energy Storage Systems:</strong> Optimize charging strategies based on degradation predictions</li>
+                        <li><strong>Warranty Management:</strong> Data-driven warranty terms based on actual degradation patterns</li>
+                        <li><strong>Cost Optimization:</strong> Plan replacement schedules to minimize total cost of ownership</li>
+                    </ul>
+
+                    <h2>Model Deployment Considerations</h2>
+                    <p>
+                        The LSTM model achieved the best performance with RMSE of 59.3 cycles, translating to ±1.5% error in typical battery cycles. 
+                        This accuracy enables reliable deployment in real-time battery management systems and IoT devices.
+                    </p>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="project-sidebar">
+                    <div class="info-box">
+                        <h3>Project Details</h3>
+                        <p><strong>Duration:</strong> Jan 2025 – Apr 2025</p>
+                        <p><strong>Guide:</strong> Prof. Alankar</p>
+                        <p><strong>Course:</strong> ME228 - Data Science for Engineers</p>
+                        <p><strong>Institution:</strong> IIT Bombay</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Technologies & Tools</h3>
+                        <ul class="tech-list">
+                            <li>Python</li>
+                            <li>Pandas & NumPy</li>
+                            <li>Seaborn & Matplotlib</li>
+                            <li>XGBoost</li>
+                            <li>TensorFlow/Keras</li>
+                            <li>LSTM Networks</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Performance Metrics</h3>
+                        <ul class="tech-list">
+                            <li>XGBoost RMSE: 67.1</li>
+                            <li>LSTM RMSE: 59.3</li>
+                            <li>Discharge-RUL Corr: 0.78</li>
+                            <li>Voltage-RUL Corr: ±0.76</li>
+                            <li>15,000+ cycles analyzed</li>
+                            <li>14 Li-ion cells tested</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Atharv Jangale | B.Tech Mechanical Engineering, IIT Bombay (2027)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

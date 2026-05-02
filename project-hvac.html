@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC Coil Optimization - Atharv Jangale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">AJ</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">← Back to Projects</a>
+            <h1>HVAC Coil Optimization for Efficiency</h1>
+            <p class="project-subtitle">Iterative MATLAB Simulation with Quasi-ML Approach for Thermal Performance</p>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="project-grid">
+                <!-- Main Content -->
+                <div class="project-main">
+                    <h2>Overview</h2>
+                    <p>
+                        This self-initiated research project focused on optimizing HVAC (Heating, Ventilation, and Air Conditioning) coil efficiency 
+                        through computational modeling and quasi-machine learning approaches. 
+                        The goal was to identify optimal design parameters that maximize thermal performance while considering practical manufacturing constraints.
+                    </p>
+
+                    <h2>Problem Statement</h2>
+                    <p>
+                        HVAC coil design involves complex tradeoffs:
+                    </p>
+                    <ul class="project-list">
+                        <li>Increasing coil diameter improves heat transfer but increases material cost and space requirements</li>
+                        <li>Modifying longitudinal and transverse spacing affects both thermal efficiency and pressure drop</li>
+                        <li>Air mass flow rate needs optimization to balance comfort, energy consumption, and noise levels</li>
+                        <li>Environmental variables (humidity, temperature, seasonal variations) impact real-world performance</li>
+                    </ul>
+
+                    <h2>Methodology</h2>
+                    <p><strong>Core Approach:</strong> Developed a parametric MATLAB simulation model connecting coil design parameters to thermal output</p>
+                    <ul class="project-list">
+                        <li><strong>Simulation Model:</strong> Iterative numerical solver for heat transfer differential equations</li>
+                        <li><strong>Parameter Space:</strong> Coil diameter, longitudinal spacing, transverse spacing, air mass flow rate</li>
+                        <li><strong>Quasi-ML Technique:</strong> Used ISEER (Integrated Seasonal Energy Efficiency Ratio) evaluations as performance metric</li>
+                        <li><strong>Environmental Integration:</strong> Incorporated humidity variations, thermal loads across seasons, and climate-specific data</li>
+                        <li><strong>Optimization:</strong> Iteratively tested parameter combinations to identify Pareto-optimal designs</li>
+                    </ul>
+
+                    <h2>Key Design Parameters Optimized</h2>
+                    <p><strong>Coil Diameter:</strong> Balanced between heat transfer surface area and spatial constraints</p>
+                    <p><strong>Tube Spacing:</strong> Optimized both longitudinal (flow direction) and transverse (perpendicular to flow) spacing</p>
+                    <p><strong>Air Flow Rate:</strong> Tuned for efficiency without excessive noise or comfort issues</p>
+                    <p><strong>Material & Fin Configuration:</strong> Analyzed different fin geometries for maximum heat transfer coefficient</p>
+
+                    <h2>Environmental Integration</h2>
+                    <p>
+                        The model incorporated real-world environmental variables that traditional coil design often overlooks:
+                    </p>
+                    <ul class="project-list">
+                        <li>Seasonal humidity variations affecting latent cooling requirements</li>
+                        <li>Geographic climate patterns for different Indian regions</li>
+                        <li>Dynamic thermal loads based on building occupancy and usage patterns</li>
+                    </ul>
+
+                    <h2>Results & Optimization Outcomes</h2>
+                    <p>
+                        The quasi-ML approach using ISEER evaluations identified optimal coil configurations that deliver:
+                    </p>
+                    <ul class="project-list">
+                        <li>15-20% improvement in seasonal energy efficiency compared to baseline designs</li>
+                        <li>Reduced pressure drop maintaining comfort levels</li>
+                        <li>Feasible manufacturing within current industry standards</li>
+                        <li>Adaptability to different climate zones and usage patterns</li>
+                    </ul>
+
+                    <h2>MATLAB Implementation Highlights</h2>
+                    <p><strong>Solver:</strong> Finite difference scheme with adaptive mesh refinement</p>
+                    <p><strong>Visualization:</strong> 3D parameter space plots showing efficiency landscape</p>
+                    <p><strong>Validation:</strong> Compared simulated results with published experimental data</p>
+                    <p><strong>Extensibility:</strong> Modular code structure for easy incorporation of new correlations or environmental models</p>
+
+                    <h2>Practical Applications</h2>
+                    <ul class="project-list">
+                        <li>Design recommendations for HVAC manufacturers targeting Indian markets</li>
+                        <li>Framework for retrofitting existing systems with optimized coils</li>
+                        <li>Energy consumption predictions for building certification (LEED, IGBC compatibility)</li>
+                        <li>Foundation for IoT-enabled predictive maintenance systems</li>
+                    </ul>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="project-sidebar">
+                    <div class="info-box">
+                        <h3>Project Details</h3>
+                        <p><strong>Duration:</strong> Jan 2025 – Aug 2025</p>
+                        <p><strong>Type:</strong> Self-Initiated Research</p>
+                        <p><strong>Focus:</strong> Thermal System Optimization</p>
+                        <p><strong>Approach:</strong> Computational & Quasi-ML</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Technologies & Tools</h3>
+                        <ul class="tech-list">
+                            <li>MATLAB</li>
+                            <li>Numerical Simulation</li>
+                            <li>Heat Transfer Analysis</li>
+                            <li>Parameter Optimization</li>
+                            <li>Data Analysis</li>
+                            <li>Visualization</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Key Metrics</h3>
+                        <ul class="tech-list">
+                            <li>15-20% efficiency gain</li>
+                            <li>ISEER-based evaluation</li>
+                            <li>Multi-parameter optimization</li>
+                            <li>Climate-adaptive design</li>
+                            <li>Real-world validation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Atharv Jangale | B.Tech Mechanical Engineering, IIT Bombay (2027)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
